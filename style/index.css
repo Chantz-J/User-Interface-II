@@ -17,6 +17,12 @@ nav .logo {
   font-size: 3rem;
 }
 
+@media (max-width: 400px) {
+  nav .logo {
+    display: none;
+  }
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,6 +30,14 @@ nav ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media (max-width: 400px) {
+  nav ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 nav ul a {
@@ -154,6 +168,7 @@ footer #btn:hover {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 62.7%;
 }
 
 *,
@@ -213,6 +228,20 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 970px) {
+  .container {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-wdith: 400px) {
+  .container {
+    width: 60%;
+    padding: 5px;
+  }
 }
 
 .container .tabs {

@@ -9,10 +9,17 @@ nav {
     padding: 70px;
     .logo {
         font-size: 3rem;
+        @media(max-width: 400px){
+            display: none;
+        }
     }
     ul{
         display: flex;
         justify-content: space-evenly;
+        @media(max-width: 400px){
+            align-items: center;
+        }
+
         a {
             margin: 20px;
             text-decoration: none;
